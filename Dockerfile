@@ -1,6 +1,5 @@
 FROM ubuntu:bionic
 
-
 # Copy environment from travis
 ENV ROS_CI_DESKTOP="`lsb_release -cs`"
 ENV CI_SOURCE_PATH=$(pwd)

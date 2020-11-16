@@ -65,7 +65,7 @@ matrix:
 
 branches:
   only:
-  - master
+  - main
 
 compiler:
 - gcc

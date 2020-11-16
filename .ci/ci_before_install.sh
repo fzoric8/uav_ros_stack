@@ -5,8 +5,4 @@
   sudo apt-get update -qq
   sudo apt-get install dpkg
   sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-ros-base
-  source /opt/ros/$ROS_DISTRO/setup.bash
-  
-  # Prepare rosdep to install dependencies.
-  sudo rosdep init
-  rosdep update --include-eol-distros  # Support EOL distros.
+  source /opt/ros/$ROS_DISTRO/setup.bas

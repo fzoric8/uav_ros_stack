@@ -53,13 +53,11 @@ matrix:
       env:
         - TRAVIS_CI=true
           BADGE=bionic
-          ROS_DISTRO=melodic
     - os: linux
       dist: focal
       env:
         - TRAVIS_CI=true
           BADGE=focal
-          ROS_DISTRO=noetic
   allow_failures:
     - env:
         - TRAVIS_CI=true
@@ -72,20 +70,8 @@ branches:
 compiler:
 - gcc
 
-env:
-  global:
-    - ROSINSTALL_FILE=$CI_SOURCE_PATH/dependencies.rosinstall
-    - CATKIN_OPTIONS=$CI_SOURCE_PATH/catkin.options
-    - ROS_PARALLEL_JOBS='-j8 -l6'
-    - PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages:/usr/local/lib/python2.7/dist-packages
-
-# Create a catkin workspace with the package under integration.
-install:
-- ./installation/workspace_setup.sh
-
 before_install:
 - ./.ci/ci_before_install.sh
-- ./installation/install.sh
 
 script:
 - echo "Hello World"

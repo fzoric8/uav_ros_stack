@@ -1,0 +1,4 @@
+FROM uav_ros_stack:latest
+
+# To stall
+CMD tail -f /dev/null

@@ -1,7 +1,7 @@
 # UAV ROS Stack
 Stack of ROS packages for PX4 / Ardupilot compatible Unmanned Aerial Vehicles
 | uav_ros_stack build status | [![Build Status](https://travis-ci.org/lmark1/uav_ros_stack.svg?branch=main)](https://travis-ci.org/lmark1/uav_ros_stack) |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ## Docker
 Install Docker using installation instruction found [here](https://docs.docker.com/engine/install/ubuntu/).

@@ -4,6 +4,8 @@ apt-get update
 apt-get install -y --no-install-recommends dialog apt-utils
 apt-get -y install sudo gnupg2 apt-utils libterm-readline-gnu-perl lsb-release
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
+DEBIAN_FRONTEND=noninteractive apt-get install keyboard-configuration
+
 sudo apt-get -y update -qq
 
 distro=`lsb_release -r | awk '{ print $2 }'`

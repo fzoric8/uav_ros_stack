@@ -1,10 +1,18 @@
 #!/bin/bash
 
+# Exit immediatelly if a command exits with a non-zero status
+set -e
+
+# Executes a command when DEBUG signal is emitted in this script - should be after every line
+trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
+
+# Executes a command when ERR signal is emmitted in this script
+trap 'echo "$0: \"${last_command}\" command failed with exit code $?"' ERR
+
 apt-get update
 apt-get install -y --no-install-recommends dialog apt-utils
 apt-get -y install sudo gnupg2 apt-utils libterm-readline-gnu-perl lsb-release
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
-DEBIAN_FRONTEND=noninteractive apt-get install keyboard-configuration
 
 sudo apt-get -y update -qq
 
@@ -38,4 +46,15 @@ bash $MY_PATH/dependencies/general.sh
 
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
-# TODO.
+num=`cat ~/.bashrc | grep "shell_additions.sh" | wc -l`
+if [ "$num" -lt "1" ]; then
+
+  TEMP=`( cd "$MY_PATH/../miscellaneous/shell_additions" && pwd )`
+
+  echo "Adding source to .bashrc"
+  # set bashrc
+  echo "
+# MRS shell configuration
+source $TEMP/shell_scripts.sh" >> ~/.bashrc
+
+fi

@@ -12,6 +12,7 @@ COPY installation /uav_ros_stack/installation/
 COPY miscellaneous /uav_ros_stack/miscellaneous/
 COPY gitman.yml /uav_ros_stack/
 
+RUN apt-get update && apt-get install sudo -y
 RUN ./uav_ros_stack/installation/install.sh
 RUN ./uav_ros_stack/installation/workspace_setup.sh
 

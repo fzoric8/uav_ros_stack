@@ -45,6 +45,12 @@ bash $MY_PATH/dependencies/ros.sh
 
 bash $MY_PATH/dependencies/general.sh
 
+## | --------------------- install gitman --------------------- |
+
+bash $MY_PATH/dependencies/gitman.sh
+
+gitman install --force
+
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
 num=`cat ~/.bashrc | grep "shell_additions.sh" | wc -l`

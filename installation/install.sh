@@ -9,10 +9,10 @@ trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
 # Executes a command when ERR signal is emmitted in this script
 trap 'echo "$0: \"${last_command}\" command failed with exit code $?"' ERR
 
-apt-get update
-apt-get install -y --no-install-recommends dialog apt-utils
-apt-get -y install sudo gnupg2 apt-utils libterm-readline-gnu-perl lsb-release
-DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends dialog apt-utils
+sudo apt-get -y install sudo gnupg2 apt-utils libterm-readline-gnu-perl lsb-release
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
 
 sudo apt-get -y update -qq
 

@@ -8,11 +8,12 @@ ENV PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages:/usr/local/lib/pytho
 ENV ROS_DISTRO="melodic"
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY installation/ setup/
-COPY miscellaneous/ miscellaneous/
+COPY installation /uav_ros_stack/installation/
+COPY miscellaneous /uav_ros_stack/miscellaneous/
+COPY gitman.yml /uav_ros_stack/
 
-RUN ./setup/install.sh
-RUN ./setup/workspace_setup.sh
+RUN ./uav_ros_stack/installation/install.sh
+RUN ./uav_ros_stack/installation/workspace_setup.sh
 
 # To stall
 CMD tail -f /dev/null

@@ -6,8 +6,11 @@ ENV CATKIN_OPTIONS=$CI_SOURCE_PATH/catkin.options
 ENV ROS_PARALLEL_JOBS='-j8 -l6'   
 ENV PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages:/usr/local/lib/python2.7/dist-packages
 ENV ROS_DISTRO="melodic"
+ENV DEBIAN_FRONTEND noninteractive
 
 COPY installation/ setup/
+COPY miscellaneous/ miscellaneous/
+
 RUN ./setup/install.sh
 RUN ./setup/workspace_setup.sh
 

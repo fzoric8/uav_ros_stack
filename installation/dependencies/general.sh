@@ -133,13 +133,10 @@ sudo apt -y install \
   zlib1g-dev\
   gcc-arm-none-eabi\
   libevent-dev\
-  libncurses5-dev\
   expect-dev\
   moreutils\
   xvfb\
-  libeigen3-dev\
   libsuitesparse-dev\
-  protobuf-compiler\
   libnlopt-dev\
   distcc\
   ocl-icd-opencl-dev\

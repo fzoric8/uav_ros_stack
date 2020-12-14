@@ -74,4 +74,4 @@ before_install:
 - ./.ci/ci_before_install.sh
 
 script:
-- echo "Hello World"
+- ./.ci/ci_test_build.sh

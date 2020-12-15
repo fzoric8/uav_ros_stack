@@ -1,55 +1,94 @@
 location: .gitman
-
 sources:
-  - name: uav_ros_general
-    type: git
-    repo: https://github.com/lmark1/uav_ros_general
-    sparse_paths:
-    -
-    rev: main
-    link: ros_packages/uav_ros_general
-    scripts:
-    - git submodule update --init --recursive
-
-  - name: uav_ros_control
-    type: git
-    repo: https://github.com/lmark1/uav_ros_control
-    sparse_paths:
-    -
-    rev: main
-    link: ros_packages/uav_ros_control
-    scripts:
-    - git submodule update --init --recursive
-
-
-  - name: uav_ros_tracker
-    type: git
-    repo: https://github.com/lmark1/uav_ros_tracker
-    sparse_paths:
-    -
-    rev: main
-    link: ros_packages/uav_ros_tracker
-    scripts:
-    - git submodule update --init --recursive
-
-  - name: uav_ros_lib
-    type: git
-    repo: https://github.com/lmark1/uav_ros_lib
-    sparse_paths:
-    -
-    rev: main
-    link: ros_packages/uav_ros_lib
-    scripts:
-    - git submodule update --init --recursive
-
-  - name: uav_ros_msgs
-    type: git
-    repo: https://github.com/lmark1/uav_ros_msgs
-    sparse_paths:
-    -
-    rev: main
-    link: ros_packages/uav_ros_msgs
-    scripts:
-    - git submodule update --init --recursive
-
+- name: uav_ros_control
+  type: git
+  repo: https://github.com/lmark1/uav_ros_control
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_control
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_general
+  type: git
+  repo: https://github.com/lmark1/uav_ros_general
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_general
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_lib
+  type: git
+  repo: https://github.com/lmark1/uav_ros_lib
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_lib
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_msgs
+  type: git
+  repo: https://github.com/lmark1/uav_ros_msgs
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_msgs
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_tracker
+  type: git
+  repo: https://github.com/lmark1/uav_ros_tracker
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_tracker
+  scripts:
+  - git submodule update --init --recursive
+sources_locked:
+- name: uav_ros_control
+  type: git
+  repo: https://github.com/lmark1/uav_ros_control
+  sparse_paths:
+  -
+  rev: e7f082391d4c345369906b46f2d96f97d9c9ce20
+  link: ros_packages/uav_ros_control
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_general
+  type: git
+  repo: https://github.com/lmark1/uav_ros_general
+  sparse_paths:
+  -
+  rev: ef72d5a9abf3655b317e3591d2f8abbf4aca88c5
+  link: ros_packages/uav_ros_general
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_lib
+  type: git
+  repo: https://github.com/lmark1/uav_ros_lib
+  sparse_paths:
+  -
+  rev: 538467f69374d47119cc044bdb398525e7c52878
+  link: ros_packages/uav_ros_lib
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_msgs
+  type: git
+  repo: https://github.com/lmark1/uav_ros_msgs
+  sparse_paths:
+  -
+  rev: 0e06eb31c75fa207b8f7be108560682f4b98bfde
+  link: ros_packages/uav_ros_msgs
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_tracker
+  type: git
+  repo: https://github.com/lmark1/uav_ros_tracker
+  sparse_paths:
+  -
+  rev: fc4b8f9dda19c167b4cfb231ed3f70ae425912d4
+  link: ros_packages/uav_ros_tracker
+  scripts:
+  - git submodule update --init --recursive
 groups: []

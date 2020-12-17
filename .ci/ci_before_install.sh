@@ -8,5 +8,5 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 [ "$distro" = "20.04" ] && ROS_DISTRO="noetic"
 
 cd ~/uav_ws/src
-ln -s ~/uav_ros_stack
+ln -s $GITHUB_WORKSPACE
 source /opt/ros/$ROS_DISTRO/setup.bash

@@ -21,10 +21,6 @@ sudo apt-get -y install cmake build-essential autotools-dev automake autoconf
 # utilities
 sudo apt -y install wget zip silversearcher-ag
 
-# the "gce-compute-image-packages" package often freezes the installation at some point
-# the installation freezes when it tries to manage some systemd services
-# this attempts to install the package and stop the problematic service during the process
-((sleep 90 && (sudo systemctl stop google-instance-setup.service && echo "gce service stoped" || echo "gce service not stoped")) & (sudo timeout 120s apt-get -y install gce-compute-image-packages)) || echo "\e[1;31mInstallation of gce-compute-image-packages failed\e[0m"
 
 # ros-related
 sudo apt-get -y install \
@@ -137,13 +133,10 @@ sudo apt -y install \
   zlib1g-dev\
   gcc-arm-none-eabi\
   libevent-dev\
-  libncurses5-dev\
   expect-dev\
   moreutils\
   xvfb\
-  libeigen3-dev\
   libsuitesparse-dev\
-  protobuf-compiler\
   libnlopt-dev\
   distcc\
   ocl-icd-opencl-dev\

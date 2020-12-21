@@ -51,6 +51,10 @@ bash $MY_PATH/dependencies/gitman.sh
 
 gitman install --force
 
+## | -------------- install tmux and tmuxinator ----------------|
+
+bash $MY_PATH/dependencies/tmux/install.sh
+
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
 num=`cat ~/.bashrc | grep "shell_additions.sh" | wc -l`

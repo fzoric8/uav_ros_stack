@@ -6,7 +6,7 @@ Stack of ROS packages for PX4 / Ardupilot compatible Unmanned Aerial Vehicles
 
 | ROS Package                                                                               | 18.04  | 20.04|
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [uav_ros_control](https://github.com/lmark1/uav_ros_control)                                       | CI Badge - Melodic | CI Badge - Noetic |
+| [uav_ros_control](https://github.com/lmark1/uav_ros_control)                                       | ![Melodic](https://github.com/lmark1/uav_ros_control/workflows/Melodic/badge.svg) | ![Noetic](https://github.com/lmark1/uav_ros_control/workflows/Noetic/badge.svg) |
 | [uav_ros_general](https://github.com/lmark1/uav_ros_general)                                             | CI Badge - Melodic | CI Badge - Noetic |
 | [uav_ros_msgs](https://github.com/lmark1/uav_ros_msgs)                   | CI Badge - Melodic | CI Badge - Noetic |
 | [uav_ros_lib](https://github.com/lmark1/uav_ros_lib)                                           | CI Badge - Melodic | CI Badge - Noetic |

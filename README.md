@@ -32,6 +32,8 @@ docker stop uav_ros_stack
 docker rm uav_ros_stack
 ```
 
+Preinstalled images can be found [here](https://hub.docker.com/repository/docker/lmark1/uav_ros_stack).
+
 ## Credits
 
 All credits for repository structure and setup goes to Multi-robot Systems ([CTU-MRS](https://github.com/ctu-mrs)) group at the Czech Technical University in Prague.

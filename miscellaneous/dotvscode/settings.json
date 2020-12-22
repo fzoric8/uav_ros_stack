@@ -1,0 +1,28 @@
+{
+  "python.autoComplete.extraPaths": [
+    "/home/lmark/uav_ws/devel/lib/python2.7/dist-packages",
+    "/opt/ros/melodic/lib/python2.7/dist-packages"
+  ],
+  "clang-tidy.compilerArgs": [
+    "-I/home/lmark/uav_ws/devel",
+    "-I/opt/ros/melodic/include",
+    "-I/usr/include/eigen3",
+    "-I/usr/include/pcl-1.8",
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_gitman/uav_ros_control/include",
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_gitman/uav_ros_general/include",
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_gitman/uav_ros_lib/include",
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_gitman/uav_ros_tracker/include"
+  ],
+  "clang-tidy.checks": [
+    "*",
+    "-fuchsia*",
+    "-google*",
+    "-abseil*",
+    "-llvm*",
+    "-modernize-use-trailing-return-type",
+    "-cppcoreguidelines-pro-bounds-array-to-pointer-decay",
+    "-hicpp-no-array-decay",
+    "-cppcoreguidelines-pro-type-vararg",
+    "-hicpp-vararg"
+  ]
+}

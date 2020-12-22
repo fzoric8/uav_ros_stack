@@ -21,7 +21,6 @@ sudo apt-get -y install cmake build-essential autotools-dev automake autoconf
 # utilities
 sudo apt -y install wget zip silversearcher-ag
 
-
 # ros-related
 sudo apt-get -y install \
   ros-$ROS_DISTRO-visualization-msgs\
@@ -163,3 +162,6 @@ sudo apt -y install \
   # libqt5-dev\ # TODO find the alternative
 
 fi
+
+#  Toppra dependencies
+pip install pytest pytest_cov

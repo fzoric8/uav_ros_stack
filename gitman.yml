@@ -1,5 +1,19 @@
 location: .gitman
 sources:
+- name: topp_ros
+  type: git
+  repo: https://github.com/larics/topp_ros.git
+  sparse_paths:
+  -
+  rev: master
+  link: ros_packages/topp_ros
+  scripts:
+  - git submodule update --init --recursive
+  - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
+  - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
+    2>&1
+  - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
+  - cd toppra && python setup.py install --user >> /dev/null 2>&1
 - name: uav_ros_control
   type: git
   repo: https://github.com/lmark1/uav_ros_control

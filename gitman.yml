@@ -87,7 +87,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_tracker
   sparse_paths:
   -
-  rev: 6d7cf3230163d21bf64e152b3f85bd0b373c5b3b
+  rev: f05a61f38b334efd470e17d1835bb4e9813b4e86
   link: ros_packages/uav_ros_tracker
   scripts:
   - git submodule update --init --recursive

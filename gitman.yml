@@ -79,7 +79,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_control
   sparse_paths:
   -
-  rev: db3881846f104b44e6522c79212f95e45cdbc975
+  rev: 777aed00934e01be16b23e0e6384ba15117886cf
   link: ros_packages/uav_ros_control
   scripts:
   - git submodule update --init --recursive
@@ -97,7 +97,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_lib
   sparse_paths:
   -
-  rev: 3afa5e91d465394919b67025f5c3fc5a63aecda1
+  rev: f6b618f37e4ff5eff30fbfd108cbc79b7e5f9e76
   link: ros_packages/uav_ros_lib
   scripts:
   - git submodule update --init --recursive

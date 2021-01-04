@@ -164,4 +164,4 @@ sudo apt -y install \
 fi
 
 #  Toppra dependencies
-pip install pytest pytest_cov
+pip install wheel pytest pytest_cov

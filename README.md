@@ -1,5 +1,8 @@
 # UAV ROS Stack
-Stack of ROS packages for PX4 / Ardupilot compatible Unmanned Aerial Vehicles
+Stack of ROS packages for PX4 / Ardupilot compatible Unmanned Aerial Vehicles.  
+It is meant to be installed on a UAV onboard computer.  
+To run this package in a simulation environment please check out [uav_ros_simulation](https://github.com/lmark1/uav_ros_simulation).  
+
 | UAV ROS Stack build status | [![Melodic](https://github.com/lmark1/uav_ros_stack/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_stack/actions) | [![Noetic](https://github.com/lmark1/uav_ros_stack/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_stack/actions)|
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 
@@ -14,6 +17,7 @@ Stack of ROS packages for PX4 / Ardupilot compatible Unmanned Aerial Vehicles
 | [topp_ros](https://github.com/larics/topp_ros)                           | N/A | N/A |  
 
 ## Installation
+
 ### Advanced
 
 Follow these installation steps if you have a catkin workspace already set up.

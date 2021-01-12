@@ -57,7 +57,7 @@ bash $MY_PATH/dependencies/tmux/install.sh
 
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
-num=`cat ~/.bashrc | grep "shell_additions.sh" | wc -l`
+num=`cat ~/.bashrc | grep "shell_scripts.sh" | wc -l`
 if [ "$num" -lt "1" ]; then
 
   TEMP=`( cd "$MY_PATH/../miscellaneous/shell_additions" && pwd )`

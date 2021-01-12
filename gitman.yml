@@ -50,6 +50,15 @@ sources:
   link: ros_packages/uav_ros_msgs
   scripts:
   - git submodule update --init --recursive
+- name: uav_ros_tests
+  type: git
+  repo: https://github.com/lmark1/uav_ros_tests
+  sparse_paths:
+  -
+  rev: main
+  link: ros_packages/uav_ros_tests
+  scripts:
+  - git submodule update --init --recursive
 - name: uav_ros_tracker
   type: git
   repo: https://github.com/lmark1/uav_ros_tracker
@@ -108,6 +117,15 @@ sources_locked:
   -
   rev: cf8534b2f5cd6a232f3eabf289b57649043cd601
   link: ros_packages/uav_ros_msgs
+  scripts:
+  - git submodule update --init --recursive
+- name: uav_ros_tests
+  type: git
+  repo: https://github.com/lmark1/uav_ros_tests
+  sparse_paths:
+  -
+  rev: d107f0fc009716939c248369567ca96265be47b8
+  link: ros_packages/uav_ros_tests
   scripts:
   - git submodule update --init --recursive
 - name: uav_ros_tracker

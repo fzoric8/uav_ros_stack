@@ -14,6 +14,7 @@ To run this package in a simulation environment please check out [uav_ros_simula
 | [uav_ros_msgs](https://github.com/lmark1/uav_ros_msgs)                   |  [![Melodic](https://github.com/lmark1/uav_ros_msgs/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_msgs/actions) | [![Noetic](https://github.com/lmark1/uav_ros_msgs/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_msgs/actions) |
 | [uav_ros_lib](https://github.com/lmark1/uav_ros_lib)                                           |  [![Melodic](https://github.com/lmark1/uav_ros_lib/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_lib/actions) | [![Noetic](https://github.com/lmark1/uav_ros_lib/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_lib/actions) |
 | [uav_ros_tracker](https://github.com/lmark1/uav_ros_tracker)                           |  [![Melodic](https://github.com/lmark1/uav_ros_tracker/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_tracker/actions) | [![Noetic](https://github.com/lmark1/uav_ros_tracker/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_tracker/actions) |
+| [uav_ros_tests](https://github.com/lmark1/uav_ros_tests) |  [![Melodic](https://github.com/lmark1/uav_ros_tests/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) | [![Noetic](https://github.com/lmark1/uav_ros_tests/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) |
 | [topp_ros](https://github.com/larics/topp_ros)                           | N/A | N/A |  
 
 ## Installation

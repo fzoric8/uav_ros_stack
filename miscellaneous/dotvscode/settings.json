@@ -11,7 +11,8 @@
     "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_control/include",
     "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_general/include",
     "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_lib/include",
-    "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_tracker/include"
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_tracker/include",
+    "-I/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_tests/include"
   ],
   "clang-tidy.checks": [
     "*",

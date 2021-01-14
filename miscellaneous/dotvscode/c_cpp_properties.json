@@ -12,6 +12,7 @@
                 "/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_general/include/**",
                 "/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_lib/include/**",
                 "/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_tracker/include/**",
+                "/home/lmark/uav_ws/src/uav_ros_stack_modules/uav_ros_tests/include/**",
                 "/usr/include/**"
             ],
             "name": "ROS",

@@ -175,3 +175,9 @@ elif [ "$distro" = "20.04" ]; then
   pip3 install --upgrade pip
   pip3 install pytest pytest_cov
 fi
+
+# Install geographic_lib_dataset.sh
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+chmod +x install_geographiclib_datasets.sh
+sudo ./install_geographiclib_datasets.sh
+rm -f install_geographiclib_datasets.sh

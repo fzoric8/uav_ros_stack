@@ -124,7 +124,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_tests
   sparse_paths:
   -
-  rev: 4a3e9f36bbee70532c84d7ee1877ec5f1b58f5e2
+  rev: f42bd92bc8e6946146259b90eb4a4d7bf1c13c4a
   link: ros_packages/uav_ros_tests
   scripts:
   - git submodule update --init --recursive

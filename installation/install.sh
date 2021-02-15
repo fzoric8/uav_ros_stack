@@ -9,12 +9,7 @@ trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
 # Executes a command when ERR signal is emmitted in this script
 trap 'echo "$0: \"${last_command}\" command failed with exit code $?"' ERR
 
-sudo apt-get update -qq
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
-sudo apt-get install -y --no-install-recommends dialog apt-utils
-sudo apt-get -y install gnupg2 libterm-readline-gnu-perl lsb-release
-
-sudo apt-get update -qq
 
 # the "gce-compute-image-packages" package often freezes the installation at some point
 # the installation freezes when it tries to manage some systemd services
@@ -25,9 +20,6 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 [ "$distro" = "18.04" ] && ROS_DISTRO="melodic"
 [ "$distro" = "20.04" ] && ROS_DISTRO="noetic"
 [ "$distro" = "20.04" ] && DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends keyboard-configuration
-
-sudo apt-get -y upgrade --fix-missing
-sudo apt-get -y install git
 
 # get the path to this script
 MY_PATH=`dirname "$0"`

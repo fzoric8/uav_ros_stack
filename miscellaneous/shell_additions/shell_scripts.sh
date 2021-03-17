@@ -23,6 +23,13 @@ waitForOdometry() {
   done
 }
 
+waitForSLAM(){
+  until timeout 3s rostopic echo /$UAV_NAMESPACE/uav/cartographer/pose -n 1 --noarr > /dev/null 2>&1; do
+    echo "waiting for SLAM odometry"
+    sleep 1;
+  done
+}
+
 waitForGlobal() {
   until timeout 3s rostopic echo /$UAV_NAMESPACE/mavros/global_position/local -n 1 --noarr > /dev/null 2>&1; do
     echo "waiting for global odometry"

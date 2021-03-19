@@ -74,7 +74,7 @@ sources_locked:
   repo: https://github.com/larics/topp_ros.git
   sparse_paths:
   -
-  rev: c5ee6fae5cd8f6251c6c5a5d0fb1774d8efc7f51
+  rev: f66fd88cf889c01d6ed1112f42e0c25b467c8b06
   link: ros_packages/topp_ros
   scripts:
   - git submodule update --init --recursive
@@ -88,7 +88,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_control
   sparse_paths:
   -
-  rev: 868a09bbf9f68edd073cee799bc86e6914bab4fa
+  rev: fa89559bdfdce816faa8638822554918caddc444
   link: ros_packages/uav_ros_control
   scripts:
   - git submodule update --init --recursive
@@ -97,7 +97,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_general
   sparse_paths:
   -
-  rev: b0288b68312c08a2232d9ecc841114b01eb91a27
+  rev: 33a257966004808f40036735e85f185b518b303f
   link: ros_packages/uav_ros_general
   scripts:
   - git submodule update --init --recursive
@@ -106,7 +106,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_lib
   sparse_paths:
   -
-  rev: 010926c331083615d8bf44f7b75063ec90f2bb03
+  rev: b53fc5bf3fcfac549ea1bbc3493cfd15156ec1e2
   link: ros_packages/uav_ros_lib
   scripts:
   - git submodule update --init --recursive
@@ -133,7 +133,7 @@ sources_locked:
   repo: https://github.com/lmark1/uav_ros_tracker
   sparse_paths:
   -
-  rev: 386c062f4fd1a361699a746794facf1a181f23c2
+  rev: 1dd82ad377574231dd47f2469c97f1fca7541afe
   link: ros_packages/uav_ros_tracker
   scripts:
   - git submodule update --init --recursive

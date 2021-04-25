@@ -41,15 +41,18 @@ bash $MY_PATH/dependencies/tmux/install.sh
 
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
-num=`cat ~/.bashrc | grep "shell_scripts.sh" | wc -l`
+SNAME=$( echo "$SHELL" | grep -Eo '[^/]+/?$' )
+BASHRC=~/.$(echo $SNAME)rc
+
+num=`cat $BASHRC | grep "shell_scripts.sh" | wc -l`
 if [ "$num" -lt "1" ]; then
 
   TEMP=`( cd "$MY_PATH/../miscellaneous/shell_additions" && pwd )`
 
-  echo "Adding source to .bashrc"
+  echo "Adding 'source $TEMP/shell_scripts.sh' to $BASHRC"
   # set bashrc
   echo "
-# MRS shell configuration
-source $TEMP/shell_scripts.sh" >> ~/.bashrc
+# Shell script configuration
+source $TEMP/shell_scripts.sh" >> $BASHRC
 
 fi

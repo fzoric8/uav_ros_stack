@@ -43,16 +43,14 @@ cd $WORKSPACE_PATH
 source /opt/ros/$ROS_DISTRO/setup.bash
 command catkin build -c
 
-num=`cat ~/.bashrc | grep "$WORKSPACE_PATH" | wc -l`
+SNAME=$( echo "$SHELL" | grep -Eo '[^/]+/?$' )
+BASHRC=~/.$(echo $SNAME)rc
+
+line="source $WORKSPACE_PATH/devel/setup.$SNAME"
+num=`cat $BASHRC | grep "$line" | wc -l`
 if [ "$num" -lt "1" ]; then
 
   # set bashrc
   echo "
-source $WORKSPACE_PATH/devel/setup.bash" >> ~/.bashrc
-  
-  if [ -e "$HOME/.zshrc" ]; then
-      echo "Adding 'source $WORKSPACE_PATH/devel/setup.zsh' to your .zshrc"
-      echo "
-  source $WORKSPACE_PATH/devel/setup.zsh" >> ~/.zshrc
-  fi
+$line" >> $BASHRC
 fi

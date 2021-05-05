@@ -1,140 +1,170 @@
-location: .gitman
+location: .gitman  
 sources:
-- name: topp_ros
-  type: git
-  repo: https://github.com/larics/topp_ros.git
-  sparse_paths:
-  -
-  rev: master
-  link: ros_packages/topp_ros
-  scripts:
-  - git submodule update --init --recursive
-  - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
-  - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
-    2>&1
-  - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
-  - cd toppra && python setup.py install --user >> /dev/null 2>&1
-- name: uav_ros_control
-  type: git
-  repo: https://github.com/lmark1/uav_ros_control
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_control
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_general
-  type: git
-  repo: https://github.com/lmark1/uav_ros_general
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_general
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_lib
-  type: git
-  repo: https://github.com/lmark1/uav_ros_lib
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_lib
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_msgs
-  type: git
-  repo: https://github.com/lmark1/uav_ros_msgs
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_msgs
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_tests
-  type: git
-  repo: https://github.com/lmark1/uav_ros_tests
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_tests
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_tracker
-  type: git
-  repo: https://github.com/lmark1/uav_ros_tracker
-  sparse_paths:
-  -
-  rev: main
-  link: ros_packages/uav_ros_tracker
-  scripts:
-  - git submodule update --init --recursive
+  - repo: https://github.com/larics/topp_ros.git
+    name: topp_ros
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/topp_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+      - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
+      - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
+        2>&1
+      - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
+      - cd toppra && python setup.py install --user >> /dev/null 2>&1
+  - repo: https://github.com/lmark1/uav_ros_control
+    name: uav_ros_control
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_control
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_general
+    name: uav_ros_general
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_general
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_lib
+    name: uav_ros_lib
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_lib
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_msgs
+    name: uav_ros_msgs
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_msgs
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_tests
+    name: uav_ros_tests
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_tests
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_tracker
+    name: uav_ros_tracker
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_tracker
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
-- name: topp_ros
-  type: git
-  repo: https://github.com/larics/topp_ros.git
-  sparse_paths:
+  - repo: https://github.com/larics/topp_ros.git
+    name: topp_ros
+    rev: f66fd88cf889c01d6ed1112f42e0c25b467c8b06
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/topp_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+      - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
+      - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
+        2>&1
+      - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
+      - cd toppra && python setup.py install --user >> /dev/null 2>&1
+  - repo: https://github.com/lmark1/uav_ros_control
+    name: uav_ros_control
+    rev: 7bc56bade5eae1a8464bce619efce9d3a6a7865c
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_control
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_general
+    name: uav_ros_general
+    rev: 4f33468e8e661536d2aca4c0777528ff9348e0ac
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_general
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_lib
+    name: uav_ros_lib
+    rev: 01f2576bc1cd13b8cbc32d256283d47661bf0f65
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_lib
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_msgs
+    name: uav_ros_msgs
+    rev: 54ae4e72391d00ab58413aba9dabd2bf75385d81
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_msgs
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_tests
+    name: uav_ros_tests
+    rev: 499334823f731e9747da8045c06d9febb9ca94d8
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_tests
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/lmark1/uav_ros_tracker
+    name: uav_ros_tracker
+    rev: 1dd82ad377574231dd47f2469c97f1fca7541afe
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_tracker
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+groups:
   -
-  rev: f66fd88cf889c01d6ed1112f42e0c25b467c8b06
-  link: ros_packages/topp_ros
-  scripts:
-  - git submodule update --init --recursive
-  - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
-  - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
-    2>&1
-  - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
-  - cd toppra && python setup.py install --user >> /dev/null 2>&1
-- name: uav_ros_control
-  type: git
-  repo: https://github.com/lmark1/uav_ros_control
-  sparse_paths:
-  -
-  rev: d78cf92a5fa54adaa21d7db955ea62eb52c440d2
-  link: ros_packages/uav_ros_control
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_general
-  type: git
-  repo: https://github.com/lmark1/uav_ros_general
-  sparse_paths:
-  -
-  rev: 657bbece9cf99334dc736c05fd73a81641e03bdd
-  link: ros_packages/uav_ros_general
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_lib
-  type: git
-  repo: https://github.com/lmark1/uav_ros_lib
-  sparse_paths:
-  -
-  rev: b53fc5bf3fcfac549ea1bbc3493cfd15156ec1e2
-  link: ros_packages/uav_ros_lib
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_msgs
-  type: git
-  repo: https://github.com/lmark1/uav_ros_msgs
-  sparse_paths:
-  -
-  rev: 54ae4e72391d00ab58413aba9dabd2bf75385d81
-  link: ros_packages/uav_ros_msgs
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_tests
-  type: git
-  repo: https://github.com/lmark1/uav_ros_tests
-  sparse_paths:
-  -
-  rev: 499334823f731e9747da8045c06d9febb9ca94d8
-  link: ros_packages/uav_ros_tests
-  scripts:
-  - git submodule update --init --recursive
-- name: uav_ros_tracker
-  type: git
-  repo: https://github.com/lmark1/uav_ros_tracker
-  sparse_paths:
-  -
-  rev: 1dd82ad377574231dd47f2469c97f1fca7541afe
-  link: ros_packages/uav_ros_tracker
-  scripts:
-  - git submodule update --init --recursive
-groups: []
+default_group: ''

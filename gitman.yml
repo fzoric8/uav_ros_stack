@@ -85,7 +85,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
-    rev: f66fd88cf889c01d6ed1112f42e0c25b467c8b06
+    rev: e1f2fdde3c854d5304bf0200d62e8868255d1f54
     type: git
     sparse_paths:
       -
@@ -156,7 +156,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/lmark1/uav_ros_tracker
     name: uav_ros_tracker
-    rev: 1dd82ad377574231dd47f2469c97f1fca7541afe
+    rev: 4b5c1abe1e9b933f0ec09fd982ba6e90f536b717
     type: git
     sparse_paths:
       -

@@ -17,6 +17,12 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 APP_PATH=`dirname "$0"`
 APP_PATH=`( cd "$APP_PATH" && pwd )`
 
+if [ "$#" -ne 1 ]; then
+  WORKSPACE_NAME=uav_ws
+elif
+  WORKSPACE_NAME=$1
+fi
+
 WORKSPACE_NAME=uav_ws
 WORKSPACE_PATH=~/$WORKSPACE_NAME
 

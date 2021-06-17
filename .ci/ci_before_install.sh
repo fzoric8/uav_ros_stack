@@ -16,9 +16,20 @@ PACKAGE_NAME=${PWD##*/}
 
 sudo apt-get -y install git
 
-./installation/install.sh
-./installation/workspace_setup.sh
+echo "clone uav_ros_simulation"
+cd
+git clone https://github.com/lmark1/uav_ros_simulation.git
+cd uav_ros_simulation
+
+./installation/install_and_setup_workspace.sh
+
+gitman update ardupilot --skip-lock --force
+gitman update
+
+# checkout the SHA
+cd ~/uav_ros_simulation/.gitman/$PACKAGE_NAME
+git checkout "$SHA"
 
 cd ~/uav_ws/src
-ln -s $GITHUB_WORKSPACE
+ln -s ~/uav_ros_simulation
 source /opt/ros/$ROS_DISTRO/setup.bash

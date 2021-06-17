@@ -27,8 +27,8 @@ cd uav_ros_simulation
 cd ~/uav_ros_simulation/.gitman/$PACKAGE_NAME
 git checkout "$SHA"
 
-# Only update uav_ros_stack
-gitman update
+# Only install uav_ros_stack
+gitman intall
 
 # No need to link up uav_ros_simulation
 source /opt/ros/$ROS_DISTRO/setup.bash

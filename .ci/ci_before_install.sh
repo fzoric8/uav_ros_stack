@@ -23,13 +23,12 @@ cd uav_ros_simulation
 
 ./installation/install_and_setup_workspace.sh
 
-gitman update ardupilot --skip-lock --force
-gitman update
-
 # checkout the SHA
 cd ~/uav_ros_simulation/.gitman/$PACKAGE_NAME
 git checkout "$SHA"
 
-cd ~/uav_ws/src
-ln -s ~/uav_ros_simulation
+# Only update uav_ros_stack
+gitman update
+
+# No need to link up uav_ros_simulation
 source /opt/ros/$ROS_DISTRO/setup.bash

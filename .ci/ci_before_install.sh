@@ -21,7 +21,7 @@ cd
 git clone https://github.com/lmark1/uav_ros_simulation.git
 cd uav_ros_simulation
 
-./installation/install_and_setup_workspace.sh
+./installation/install_and_setup_workspace.sh $CATKIN_WORKSPACE
 
 # checkout the SHA
 cd ~/uav_ros_simulation/.gitman/$PACKAGE_NAME

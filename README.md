@@ -17,6 +17,9 @@ To run this package in a simulation environment please check out [uav_ros_simula
 | [uav_ros_tests](https://github.com/lmark1/uav_ros_tests) |  [![Melodic](https://github.com/lmark1/uav_ros_tests/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) | [![Noetic](https://github.com/lmark1/uav_ros_tests/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) |
 | [topp_ros](https://github.com/larics/topp_ros)                           | N/A | N/A |  
 
+## Wiki
+Check out [Copters of Latrics](https://sites.google.com/view/larics-copters-wiki/home) Wiki page.
+
 ## Installation
 
 ### Advanced

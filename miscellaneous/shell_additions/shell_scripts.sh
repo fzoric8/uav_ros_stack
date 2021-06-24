@@ -16,6 +16,13 @@ waitForSimulation() {
   sleep 1;
 }
 
+waitFor() {
+  until timeout 3s rostopic echo $1 -n 1 --noarr > /dev/null 2>&1; do
+    echo "waiting for $1"
+    sleep 1;
+  done
+}
+
 waitForOdometry() {
   until timeout 3s rostopic echo /$UAV_NAMESPACE/mavros/local_position/odom -n 1 --noarr > /dev/null 2>&1; do
     echo "waiting for odometry"

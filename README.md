@@ -42,13 +42,10 @@ Install Docker using installation instruction found [here](https://docs.docker.c
 Run Dockerfile from the project root directory using the following commands:
 ```bash
 # e.g. if you want to build a Bionic Dockerfile
-docker build Dockerfile.bionic -t uav_ros_stack:bionic
+docker build -f Dockerfile.bionic -t uav_ros_stack:bionic .
 
 # Run the uav_ros_stack:bionic container
-docker run --name uav_ros_stack uav_ros_stack:bionic
-
-# Execute /bin/bash command on the running container
-docker exec -it uav_ros_stack /bin/bash
+docker run -it --rm --network host --privileged -v /dev:/dev --name uav_ros_stack uav_ros_stack:bionic /bin/bash
 
 # Stop the conatainer
 docker stop uav_ros_stack

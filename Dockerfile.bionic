@@ -4,6 +4,7 @@ FROM ubuntu:bionic
 # https://github.com/moby/moby/issues/4032#issuecomment-192327844
 ARG CATKIN_WORKSPACE=uav_ws
 ARG DEBIAN_FRONTEND=noninteractive
+ARG HOME=/root
 
 # Install all the things to stop docker build from breaking
 RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
@@ -18,7 +19,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
 # Clone uav_ros_stack
-WORKDIR ~
+WORKDIR $HOME
 RUN git clone https://github.com/larics/uav_ros_stack
 
 # Run installation
@@ -28,5 +29,5 @@ RUN ./uav_ros_stack/installation/install.sh
 RUN ./uav_ros_stack/installation/workspace_setup.sh $CATKIN_WORKSPACE
 
 # Link and build the workspace
-WORKDIR ~/$CATKIN_WORKSPACE/src
-RUN ln -s ~/uav_ros_stack && catkin build
+WORKDIR $HOME/$CATKIN_WORKSPACE/src
+RUN ln -s $HOME/uav_ros_stack && catkin build

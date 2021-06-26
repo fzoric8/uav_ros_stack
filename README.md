@@ -18,7 +18,7 @@ To run this package in a simulation environment please check out [uav_ros_simula
 | [topp_ros](https://github.com/larics/topp_ros)                           | N/A | N/A |  
 
 ## Wiki
-Check out [Copters of Latrics](https://sites.google.com/view/larics-copters-wiki/home) Wiki page.
+Check out [Copters of Larics](https://sites.google.com/view/larics-copters-wiki/home) Wiki page.
 
 ## Installation
 

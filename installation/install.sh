@@ -39,6 +39,10 @@ gitman install --force
 
 bash $MY_PATH/dependencies/tmux/install.sh
 
+## | -------------- install gdb-dahsboard ----------------------|
+
+bash $MY_PATH/dependencies/gdb/install.sh
+
 ## | ------- add sourcing of shell additions to .bashrc ------- |
 
 SNAME=$( echo "$SHELL" | grep -Eo '[^/]+/?$' )

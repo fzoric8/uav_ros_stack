@@ -166,6 +166,7 @@ fi
 
 if [ "$distro" = "18.04" ]; then
   #  Toppra dependencies
+  python -m pip install --user --upgrade pip
   pip install wheel 
   pip install --upgrade pip
   pip install pytest pytest_cov

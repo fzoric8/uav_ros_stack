@@ -15,6 +15,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
     gnupg2 \
     apt-utils \
     dialog \
+    curl \
     tzdata && \
     dpkg-reconfigure --frontend noninteractive tzdata
 

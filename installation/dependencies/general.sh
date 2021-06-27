@@ -178,7 +178,4 @@ elif [ "$distro" = "20.04" ]; then
 fi
 
 # Install geographic_lib_dataset.sh
-wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-chmod +x install_geographiclib_datasets.sh
-sudo ./install_geographiclib_datasets.sh
-rm -f install_geographiclib_datasets.sh
+curl https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh | sudo bash

@@ -16,6 +16,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
     apt-utils \
     dialog \
     tzdata \
+    curl \
     keyboard-configuration && \
     dpkg-reconfigure --frontend noninteractive tzdata
 

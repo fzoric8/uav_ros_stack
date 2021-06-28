@@ -25,7 +25,6 @@ jobs:
   # This workflow contains a single job called "build"
   docker-deploy:
     runs-on: ubuntu-18.04
-    environment: dockerhub_environment
     steps:
       -
         name: Set up QEMU

@@ -59,6 +59,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-18.04
     needs: build
+    if: github.event_name != 'pull_request' 
     steps:
       -
         name: Set up QEMU
@@ -78,5 +79,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: Dockerfile.focal
-          push: github.event_name != 'pull_request'
+          push: true
           tags: lmark1/uav_ros_stack:focal

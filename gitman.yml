@@ -101,7 +101,7 @@ sources_locked:
       - cd toppra && python setup.py install --user >> /dev/null 2>&1
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
-    rev: 535690fdaf4ab21ad2f7eef517b8a6cf6a8b0612
+    rev: c05dc779415b4d430e65486d11ac21292c703be0
     type: git
     sparse_paths:
       -

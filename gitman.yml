@@ -156,7 +156,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: 572e99efd770946e3b979d7af9ae70d3afb0ce8c
+    rev: c9407a26ca09bfc78512590489a24edff2f494d3
     type: git
     sparse_paths:
       -

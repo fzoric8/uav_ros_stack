@@ -101,7 +101,7 @@ sources_locked:
       - cd toppra && python setup.py install --user >> /dev/null 2>&1
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
-    rev: bdfd4c214f977aae045bc516690b6bae781a357e
+    rev: 5fa58327259954914696d3e7446995692794c8e3
     type: git
     sparse_paths:
       -
@@ -112,7 +112,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_general
     name: uav_ros_general
-    rev: 4ea892dc74bd934d1de969a6454277afda8c7cbf
+    rev: 04fd511d7183919e66e4bccf231ef6c1cbf83e14
     type: git
     sparse_paths:
       -
@@ -123,7 +123,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_lib
     name: uav_ros_lib
-    rev: 01f2576bc1cd13b8cbc32d256283d47661bf0f65
+    rev: be75f43a498dc54a0f696fdaa5490ebcaecb87c4
     type: git
     sparse_paths:
       -
@@ -134,7 +134,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_msgs
     name: uav_ros_msgs
-    rev: b1ce2e424ce9c2453cbbab028b49d8ce54137871
+    rev: bac8c7560ebc491594b58528d5d6234b4824bccb
     type: git
     sparse_paths:
       -
@@ -156,7 +156,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: c9407a26ca09bfc78512590489a24edff2f494d3
+    rev: 55d6162e63b9058b2cf5a9edccd7acb44180cd7e
     type: git
     sparse_paths:
       -

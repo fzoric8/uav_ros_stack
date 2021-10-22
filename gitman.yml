@@ -101,7 +101,7 @@ sources_locked:
       - cd toppra && python setup.py install --user >> /dev/null 2>&1
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
-    rev: 5fa58327259954914696d3e7446995692794c8e3
+    rev: e3a040a272f48e69e4f4cd3d082f209828227578
     type: git
     sparse_paths:
       -
@@ -112,7 +112,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_general
     name: uav_ros_general
-    rev: 04fd511d7183919e66e4bccf231ef6c1cbf83e14
+    rev: 296000a5520bfc9c2d50d3ba764c2e706259cdad
     type: git
     sparse_paths:
       -
@@ -156,7 +156,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: 55d6162e63b9058b2cf5a9edccd7acb44180cd7e
+    rev: 12726578af2c1dac71b9dd4a84bb4ec1ed635e09
     type: git
     sparse_paths:
       -

@@ -1,4 +1,4 @@
-location: ../../uav_ros_stack_modules
+location: .gitman
 sources:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros

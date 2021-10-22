@@ -1,4 +1,4 @@
-location: .gitman  
+location: ../../uav_ros_stack_modules
 sources:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
@@ -145,7 +145,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tests
     name: uav_ros_tests
-    rev: b0c1cf1beb8a4f38f7495a8eeaeb42992dba5d04
+    rev: a8198d2ddf9abf3db82ff22efd68f30c1c449a40
     type: git
     sparse_paths:
       -

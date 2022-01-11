@@ -78,3 +78,21 @@ killp() {
 # echo "killing $1"
 kill -9 "$1" > /dev/null 2> /dev/null
 }
+
+waitForSysStatus() {
+  until timeout 3s rostopic echo /$UAV_NAMESPACE/mavros/state -n 1 --noarr > /dev/null 2>&1; do
+    echo "waiting for /$UAV_NAMESPACE/mavros/state"
+    sleep 1;
+  done
+
+  while true
+    do
+      system_status=$(echo "$(rostopic echo /$UAV_NAMESPACE/mavros/state -n 1| grep system_status)" | awk '{print $2}')
+      if [[ $system_status == "3" ]]; then
+          break
+        else
+          echo "waiting for system_status"
+        fi
+      sleep 1
+    done
+}

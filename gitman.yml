@@ -11,11 +11,6 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
-      - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
-      - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
-        2>&1
-      - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
-      - cd toppra && python setup.py install --user >> /dev/null 2>&1
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
     rev: main
@@ -85,7 +80,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
-    rev: e1f2fdde3c854d5304bf0200d62e8868255d1f54
+    rev: d579e311a75c557eceea65a5414745eced7b0d70
     type: git
     sparse_paths:
       -
@@ -94,11 +89,6 @@ sources_locked:
       -
     scripts:
       - git submodule update --init --recursive
-      - git clone https://github.com/hungpham2511/toppra || echo "Toppra exists"
-      - cd toppra && git checkout 8df858b08175d4884b803bf6ab7f459205e54fa2 >> /dev/null
-        2>&1
-      - cd toppra && pip install -r requirements.txt --user >> /dev/null 2>&1
-      - cd toppra && python setup.py install --user >> /dev/null 2>&1
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
     rev: 623b507c09719612c38995b4ad3d9c366d32f572
@@ -156,7 +146,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: a081942f4f591c85fc49c8e0dccb6d946c48e3a9
+    rev: 1757753df5e07e3e1a29420d24810027ed16e981
     type: git
     sparse_paths:
       -

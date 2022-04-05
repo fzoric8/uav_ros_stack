@@ -77,6 +77,17 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
+  - repo: https://github.com/larics/uav_ros_drivers
+    name: uav_ros_drivers
+    rev: main
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_drivers
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
@@ -151,6 +162,17 @@ sources_locked:
     sparse_paths:
       -
     link: ros_packages/uav_ros_tracker
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/uav_ros_drivers
+    name: uav_ros_drivers
+    rev: 2d985b855887e4947b741fe224ded9071e3cc896
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/uav_ros_drivers
     links:
       -
     scripts:

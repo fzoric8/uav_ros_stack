@@ -28,6 +28,7 @@ cd uav_ros_simulation
 gitman install --force
 echo "Lock $PACKAGE_NAME at commit $COMMIT_ID"
 cd ros_packages/$PACKAGE_NAME
+git fetch --all
 git checkout $COMMIT_ID
 cd ../../
 gitman lock $PACKAGE_NAME

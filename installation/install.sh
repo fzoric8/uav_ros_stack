@@ -43,6 +43,9 @@ gitman install --force
 ## | -------------- install toppra ----------------|
 bash $MY_PATH/../ros_packages/topp_ros/installation/install.sh
 
+## | -------------- install uav_ros_drivers ----------------|
+bash $MY_PATH/../ros_packages/uav_ros_drivers/installation/install.sh
+
 ## | -------------- install tmux and tmuxinator ----------------|
 
 bash $MY_PATH/dependencies/tmux/install.sh

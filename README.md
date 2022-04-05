@@ -16,7 +16,7 @@ To run this package in a simulation environment please check out [uav_ros_simula
 | [uav_ros_tracker](https://github.com/lmark1/uav_ros_tracker)                           |  [![Melodic](https://github.com/lmark1/uav_ros_tracker/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_tracker/actions) | [![Noetic](https://github.com/lmark1/uav_ros_tracker/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_tracker/actions) |
 | [uav_ros_tests](https://github.com/lmark1/uav_ros_tests) |  [![Melodic](https://github.com/lmark1/uav_ros_tests/workflows/Melodic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) | [![Noetic](https://github.com/lmark1/uav_ros_tests/workflows/Noetic/badge.svg)](https://github.com/lmark1/uav_ros_tests/actions) |
 | [topp_ros](https://github.com/larics/topp_ros)                           | [![Melodic](https://github.com/larics/topp_ros/actions/workflows/melodic.yml/badge.svg?branch=master)](https://github.com/larics/topp_ros/actions/workflows/melodic.yml)  | [![Noetic](https://github.com/larics/topp_ros/actions/workflows/noetic.yml/badge.svg?branch=master)](https://github.com/larics/topp_ros/actions/workflows/noetic.yml) |  `
-| [uav_ros_drivers](https://github.com/larics/uav_ros_drivers)             | N/A | N/A |
+| [uav_ros_drivers](https://github.com/larics/uav_ros_drivers)             | [![Melodic](https://github.com/larics/uav_ros_drivers/actions/workflows/melodic.yml/badge.svg?branch=main)](https://github.com/larics/uav_ros_drivers/actions/workflows/melodic.yml) | [![Noetic](https://github.com/larics/uav_ros_drivers/actions/workflows/noetic.yml/badge.svg?branch=main)](https://github.com/larics/uav_ros_drivers/actions/workflows/noetic.yml) |
 
 
 ## Wiki

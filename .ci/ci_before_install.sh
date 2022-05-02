@@ -14,6 +14,8 @@ SHA=`git rev-parse HEAD`
 # get the current package name
 PACKAGE_NAME=${PWD##*/}
 COMMIT_ID="$GITHUB_SHA"
+BRANCH_NAME=${GITHUB_REF##*/}
+PACKAGE_PATH=$(pwd)
 
 sudo apt-get update
 sudo apt-get -y install git
@@ -26,10 +28,11 @@ cd uav_ros_simulation
 # install Gitman and lock the package to the current CI commit
 ./installation/dependencies/gitman.sh
 gitman install --force
-echo "Lock $PACKAGE_NAME at commit $COMMIT_ID"
+echo "Copy $PACKAGE_NAME at branch $BRANCH_NAME"
 cd ros_packages/$PACKAGE_NAME
-git fetch --all
-git checkout $COMMIT_ID
+rm -rf *
+$(rm -rf .* 2> /dev/null) || true
+cp -r $PACKAGE_PATH/. .
 cd ../../
 gitman lock $PACKAGE_NAME
 

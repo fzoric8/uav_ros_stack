@@ -13,10 +13,6 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 [ "$distro" = "18.04" ] && ROS_DISTRO="melodic"
 [ "$distro" = "20.04" ] && ROS_DISTRO="noetic"
 
-# Python fix
-if [ "$distro" = "20.04" ]; then
-  sudo ln -sf /usr/bin/python3 /usr/bin/python
-fi
 
 # get the path to this script
 MY_PATH=`dirname "$0"`
@@ -55,6 +51,11 @@ bash $MY_PATH/dependencies/tmux/install.sh
 bash $MY_PATH/dependencies/gdb/install.sh
 
 ## | ------- add sourcing of shell additions to .bashrc ------- |
+
+# Python fix
+if [ "$distro" = "20.04" ]; then
+  sudo ln -sf /usr/bin/python3 /usr/bin/python
+fi
 
 SNAME=$( echo "$SHELL" | grep -Eo '[^/]+/?$' )
 BASHRC=~/.$(echo $SNAME)rc

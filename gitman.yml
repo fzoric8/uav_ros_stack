@@ -91,7 +91,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
-    rev: d579e311a75c557eceea65a5414745eced7b0d70
+    rev: eb9017404ea5a7187a85f55f0554b45b0fffe3c0
     type: git
     sparse_paths:
       -
@@ -102,7 +102,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
-    rev: 623b507c09719612c38995b4ad3d9c366d32f572
+    rev: 744de313d5bc1cf68878a720dfd3413d3f1b6586
     type: git
     sparse_paths:
       -
@@ -113,7 +113,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_general
     name: uav_ros_general
-    rev: 268b8a655325af7badc81a7326b2b6b0b5fa24cc
+    rev: 505e5b42b2cc017cb8e917a807244594d67e46a2
     type: git
     sparse_paths:
       -
@@ -124,7 +124,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_lib
     name: uav_ros_lib
-    rev: bf598c1d71d1a65b4f0e633ec0d024dc35055ff1
+    rev: bd7ec66c48c3a0bd392dc52f9c33e76e974552ac
     type: git
     sparse_paths:
       -
@@ -135,7 +135,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_msgs
     name: uav_ros_msgs
-    rev: af7894445dca8abdfd81ef98144cd01721398ea9
+    rev: e9acecdd35906375f930cc1d1259811c6436709e
     type: git
     sparse_paths:
       -
@@ -157,7 +157,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: 1757753df5e07e3e1a29420d24810027ed16e981
+    rev: 579153f61c1115790409f330baca06bfd4b58ea3
     type: git
     sparse_paths:
       -

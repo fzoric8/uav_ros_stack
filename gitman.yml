@@ -91,7 +91,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/topp_ros.git
     name: topp_ros
-    rev: eb9017404ea5a7187a85f55f0554b45b0fffe3c0
+    rev: 87ae410b98ef9061529a4040627ce372fa42e6c1
     type: git
     sparse_paths:
       -

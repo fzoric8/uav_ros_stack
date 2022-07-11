@@ -168,7 +168,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_drivers
     name: uav_ros_drivers
-    rev: 4d67b1048f41f005b1f80c5efa5c9b55ec540b75
+    rev: 0f952b74a952897486207eb64f12ef8bf08b7834
     type: git
     sparse_paths:
       -

@@ -102,7 +102,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_control
     name: uav_ros_control
-    rev: 464a4b03a7d9198061babba6600735dc60ec22a7
+    rev: c0acdfffce4d7e427fdb5ffeeaf82f6ffc8de455
     type: git
     sparse_paths:
       -
@@ -113,7 +113,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_general
     name: uav_ros_general
-    rev: de2a3165f08d7e66386b514c867d5dcbb1b0f093
+    rev: b2c6a340fbcbbdcec819e5262f0feea83b9b019c
     type: git
     sparse_paths:
       -

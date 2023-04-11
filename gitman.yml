@@ -113,7 +113,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_general
     name: uav_ros_general
-    rev: b2c6a340fbcbbdcec819e5262f0feea83b9b019c
+    rev: 5bff07ff88a6dd5c7699e6609ab75822cb24ad92
     type: git
     sparse_paths:
       -
@@ -124,7 +124,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_lib
     name: uav_ros_lib
-    rev: e2a3ec2270b369277904d9558fbe814e0961e3f8
+    rev: bf4e21d810d5e3f278b87e2249146834d19e0da9
     type: git
     sparse_paths:
       -
@@ -157,7 +157,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tracker
     name: uav_ros_tracker
-    rev: f15df6d81d4c04b0bd877cd9950efb2afc173560
+    rev: 93541d5f279bd4137d03ea6ce127fef5ca72bbd3
     type: git
     sparse_paths:
       -

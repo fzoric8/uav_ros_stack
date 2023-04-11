@@ -59,6 +59,9 @@ sudo apt-get -y install \
   ros-$ROS_DISTRO-libmavconn\
   ros-$ROS_DISTRO-mavros-extras\
   ros-$ROS_DISTRO-robot-state-publisher\
+  ros-$ROS_DISTRO-joint-state-controller\
+  ros-$ROS_DISTRO-effort-controllers\
+  ros-$ROS_DISTRO-position-controllers
 
 if [ "$distro" = "18.04" ]; then
 

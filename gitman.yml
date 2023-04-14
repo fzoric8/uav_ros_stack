@@ -146,7 +146,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/uav_ros_tests
     name: uav_ros_tests
-    rev: 2644b3527bbed8de4fa6dffed300d6e7d9a98491
+    rev: 95538dfe5ad3f86e0cb9831d7e4c847a5e4eda8d
     type: git
     sparse_paths:
       -

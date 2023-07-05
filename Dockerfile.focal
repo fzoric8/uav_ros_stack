@@ -22,7 +22,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
 
 # Clone uav_ros_stack and checkout on armv7 branch 
 WORKDIR $HOME
-RUN git clone https://github.com/larics/uav_ros_stack \
+RUN git clone https://github.com/fzoric8/uav_ros_stack 
 WORKDIR $HOME/uav_ros_stack
 RUN git checkout armv7 
 

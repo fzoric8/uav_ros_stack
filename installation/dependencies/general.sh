@@ -29,7 +29,7 @@ sudo apt-get -y install \
   ros-$ROS_DISTRO-nav-msgs\
   ros-$ROS_DISTRO-angles\
   ros-$ROS_DISTRO-rosconsole-bridge\
-  ros-$ROS_DISTRO-gazebo-*\
+#  ros-$ROS_DISTRO-gazebo-*\
   ros-$ROS_DISTRO-eigen-conversions\
   ros-$ROS_DISTRO-tf-conversions\
   ros-$ROS_DISTRO-roslint\

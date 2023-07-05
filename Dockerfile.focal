@@ -20,10 +20,13 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Zagreb /etc/localtime && \
     keyboard-configuration && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
-# Clone uav_ros_stack
+# Clone uav_ros_stack and checkout on armv7 branch 
 WORKDIR $HOME
-RUN git clone https://github.com/larics/uav_ros_stack
+RUN git clone https://github.com/larics/uav_ros_stack \
+WORKDIR $HOME/uav_ros_stack
+RUN git checkout armv7 
 
+WORKDIR $HOME
 # Run installation
 RUN ./uav_ros_stack/installation/install.sh
 
